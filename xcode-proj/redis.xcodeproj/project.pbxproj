@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2A278351DFADFF60056BDE0 /* libhiredis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C65B41151DFAB6C5000E4D48 /* libhiredis.a */; };
+		C2A278361DFAE2B60056BDE0 /* hiredis.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F1E1DFAB02E000E4D48 /* hiredis.c */; };
 		C65B3EC11DFAAF2A000E4D48 /* adlist.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3E5A1DFAAF2A000E4D48 /* adlist.c */; };
 		C65B3EC21DFAAF2A000E4D48 /* ae.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3E5C1DFAAF2A000E4D48 /* ae.c */; };
 		C65B3EC71DFAAF2A000E4D48 /* anet.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3E621DFAAF2A000E4D48 /* anet.c */; };
@@ -60,98 +62,59 @@
 		C65B3EFD1DFAAF2A000E4D48 /* zipmap.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3EBD1DFAAF2A000E4D48 /* zipmap.c */; };
 		C65B3EFE1DFAAF2A000E4D48 /* zmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3EBF1DFAAF2A000E4D48 /* zmalloc.c */; };
 		C65B406F1DFAB0ED000E4D48 /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B400A1DFAB02E000E4D48 /* fpconv.c */; };
-		C65B40701DFAB0ED000E4D48 /* fpconv.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B400B1DFAB02E000E4D48 /* fpconv.h */; };
 		C65B40711DFAB0ED000E4D48 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B400C1DFAB02E000E4D48 /* lapi.c */; };
-		C65B40721DFAB0ED000E4D48 /* lapi.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B400D1DFAB02E000E4D48 /* lapi.h */; };
 		C65B40731DFAB0ED000E4D48 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B400E1DFAB02E000E4D48 /* lauxlib.c */; };
-		C65B40741DFAB0ED000E4D48 /* lauxlib.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B400F1DFAB02E000E4D48 /* lauxlib.h */; };
 		C65B40751DFAB0ED000E4D48 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40101DFAB02E000E4D48 /* lbaselib.c */; };
 		C65B40761DFAB0ED000E4D48 /* lcode.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40111DFAB02E000E4D48 /* lcode.c */; };
-		C65B40771DFAB0ED000E4D48 /* lcode.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40121DFAB02E000E4D48 /* lcode.h */; };
 		C65B40781DFAB0ED000E4D48 /* ldblib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40131DFAB02E000E4D48 /* ldblib.c */; };
 		C65B40791DFAB0ED000E4D48 /* ldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40141DFAB02E000E4D48 /* ldebug.c */; };
-		C65B407A1DFAB0ED000E4D48 /* ldebug.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40151DFAB02E000E4D48 /* ldebug.h */; };
 		C65B407B1DFAB0ED000E4D48 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40161DFAB02E000E4D48 /* ldo.c */; };
-		C65B407C1DFAB0ED000E4D48 /* ldo.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40171DFAB02E000E4D48 /* ldo.h */; };
 		C65B407D1DFAB0ED000E4D48 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40181DFAB02E000E4D48 /* ldump.c */; };
 		C65B407E1DFAB0ED000E4D48 /* lfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40191DFAB02E000E4D48 /* lfunc.c */; };
-		C65B407F1DFAB0ED000E4D48 /* lfunc.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B401A1DFAB02E000E4D48 /* lfunc.h */; };
 		C65B40801DFAB0ED000E4D48 /* lgc.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B401B1DFAB02E000E4D48 /* lgc.c */; };
-		C65B40811DFAB0ED000E4D48 /* lgc.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B401C1DFAB02E000E4D48 /* lgc.h */; };
 		C65B40821DFAB0ED000E4D48 /* linit.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B401D1DFAB02E000E4D48 /* linit.c */; };
 		C65B40831DFAB0ED000E4D48 /* liolib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B401E1DFAB02E000E4D48 /* liolib.c */; };
 		C65B40841DFAB0ED000E4D48 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B401F1DFAB02E000E4D48 /* llex.c */; };
-		C65B40851DFAB0ED000E4D48 /* llex.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40201DFAB02E000E4D48 /* llex.h */; };
-		C65B40861DFAB0ED000E4D48 /* llimits.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40211DFAB02E000E4D48 /* llimits.h */; };
 		C65B40871DFAB0ED000E4D48 /* lmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40221DFAB02E000E4D48 /* lmathlib.c */; };
 		C65B40881DFAB0ED000E4D48 /* lmem.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40231DFAB02E000E4D48 /* lmem.c */; };
-		C65B40891DFAB0ED000E4D48 /* lmem.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40241DFAB02E000E4D48 /* lmem.h */; };
 		C65B408A1DFAB0ED000E4D48 /* loadlib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40251DFAB02E000E4D48 /* loadlib.c */; };
 		C65B408B1DFAB0ED000E4D48 /* lobject.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40261DFAB02E000E4D48 /* lobject.c */; };
-		C65B408C1DFAB0ED000E4D48 /* lobject.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40271DFAB02E000E4D48 /* lobject.h */; };
 		C65B408D1DFAB0ED000E4D48 /* lopcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40281DFAB02E000E4D48 /* lopcodes.c */; };
-		C65B408E1DFAB0ED000E4D48 /* lopcodes.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40291DFAB02E000E4D48 /* lopcodes.h */; };
 		C65B408F1DFAB0ED000E4D48 /* loslib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B402A1DFAB02E000E4D48 /* loslib.c */; };
 		C65B40901DFAB0ED000E4D48 /* lparser.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B402B1DFAB02E000E4D48 /* lparser.c */; };
-		C65B40911DFAB0ED000E4D48 /* lparser.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B402C1DFAB02E000E4D48 /* lparser.h */; };
 		C65B40921DFAB0ED000E4D48 /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B402D1DFAB02E000E4D48 /* lstate.c */; };
-		C65B40931DFAB0ED000E4D48 /* lstate.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B402E1DFAB02E000E4D48 /* lstate.h */; };
 		C65B40941DFAB0ED000E4D48 /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B402F1DFAB02E000E4D48 /* lstring.c */; };
-		C65B40951DFAB0ED000E4D48 /* lstring.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40301DFAB02E000E4D48 /* lstring.h */; };
 		C65B40961DFAB0ED000E4D48 /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40311DFAB02E000E4D48 /* lstrlib.c */; };
 		C65B40971DFAB0ED000E4D48 /* ltable.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40321DFAB02E000E4D48 /* ltable.c */; };
-		C65B40981DFAB0ED000E4D48 /* ltable.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40331DFAB02E000E4D48 /* ltable.h */; };
 		C65B40991DFAB0ED000E4D48 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40341DFAB02E000E4D48 /* ltablib.c */; };
 		C65B409A1DFAB0ED000E4D48 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40351DFAB02E000E4D48 /* ltm.c */; };
-		C65B409B1DFAB0ED000E4D48 /* ltm.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40361DFAB02E000E4D48 /* ltm.h */; };
-		C65B409C1DFAB0ED000E4D48 /* lua.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40381DFAB02E000E4D48 /* lua.h */; };
 		C65B409D1DFAB0ED000E4D48 /* lua_bit.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40391DFAB02E000E4D48 /* lua_bit.c */; };
 		C65B409E1DFAB0ED000E4D48 /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B403A1DFAB02E000E4D48 /* lua_cjson.c */; };
 		C65B409F1DFAB0ED000E4D48 /* lua_cmsgpack.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B403B1DFAB02E000E4D48 /* lua_cmsgpack.c */; };
 		C65B40A01DFAB0ED000E4D48 /* lua_struct.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B403C1DFAB02E000E4D48 /* lua_struct.c */; };
-		C65B40A11DFAB0ED000E4D48 /* luaconf.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B403E1DFAB02E000E4D48 /* luaconf.h */; };
-		C65B40A21DFAB0ED000E4D48 /* lualib.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B403F1DFAB02E000E4D48 /* lualib.h */; };
 		C65B40A31DFAB0ED000E4D48 /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40401DFAB02E000E4D48 /* lundump.c */; };
-		C65B40A41DFAB0ED000E4D48 /* lundump.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40411DFAB02E000E4D48 /* lundump.h */; };
 		C65B40A51DFAB0ED000E4D48 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40421DFAB02E000E4D48 /* lvm.c */; };
-		C65B40A61DFAB0ED000E4D48 /* lvm.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40431DFAB02E000E4D48 /* lvm.h */; };
 		C65B40A71DFAB0ED000E4D48 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40441DFAB02E000E4D48 /* lzio.c */; };
-		C65B40A81DFAB0ED000E4D48 /* lzio.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40451DFAB02E000E4D48 /* lzio.h */; };
-		C65B40A91DFAB0ED000E4D48 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C65B40461DFAB02E000E4D48 /* Makefile */; };
 		C65B40AA1DFAB0ED000E4D48 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40471DFAB02E000E4D48 /* print.c */; };
 		C65B40AB1DFAB0ED000E4D48 /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B40481DFAB02E000E4D48 /* strbuf.c */; };
-		C65B40AC1DFAB0ED000E4D48 /* strbuf.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B40491DFAB02E000E4D48 /* strbuf.h */; };
-		C65B40EF1DFAB179000E4D48 /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = C65B40381DFAB02E000E4D48 /* lua.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C65B40F01DFAB210000E4D48 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C65B40661DFAB072000E4D48 /* liblua.a */; };
 		C65B40F11DFAB5AC000E4D48 /* sentinel.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3EA41DFAAF2A000E4D48 /* sentinel.c */; };
 		C65B410A1DFAB622000E4D48 /* geohash.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F041DFAB02E000E4D48 /* geohash.c */; };
-		C65B410B1DFAB622000E4D48 /* geohash.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F051DFAB02E000E4D48 /* geohash.h */; };
 		C65B410C1DFAB622000E4D48 /* geohash_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F061DFAB02E000E4D48 /* geohash_helper.c */; };
-		C65B410D1DFAB622000E4D48 /* geohash_helper.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F071DFAB02E000E4D48 /* geohash_helper.h */; };
 		C65B41101DFAB636000E4D48 /* libgeohash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C65B41011DFAB60E000E4D48 /* libgeohash.a */; };
-		C65B411E1DFAB6F1000E4D48 /* ae.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F0D1DFAB02E000E4D48 /* ae.h */; };
-		C65B411F1DFAB6F1000E4D48 /* libev.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F0E1DFAB02E000E4D48 /* libev.h */; };
-		C65B41201DFAB6F1000E4D48 /* libevent.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F0F1DFAB02E000E4D48 /* libevent.h */; };
-		C65B41211DFAB6F1000E4D48 /* libuv.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F101DFAB02E000E4D48 /* libuv.h */; };
 		C65B41221DFAB6F1000E4D48 /* async.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F111DFAB02E000E4D48 /* async.c */; };
-		C65B41231DFAB6F1000E4D48 /* async.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F121DFAB02E000E4D48 /* async.h */; };
-		C65B41241DFAB6F1000E4D48 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F151DFAB02E000E4D48 /* dict.c */; };
-		C65B41251DFAB6F1000E4D48 /* dict.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F161DFAB02E000E4D48 /* dict.h */; };
-		C65B41261DFAB6F1000E4D48 /* fmacros.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F1D1DFAB02E000E4D48 /* fmacros.h */; };
-		C65B41271DFAB6F1000E4D48 /* hiredis.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F1E1DFAB02E000E4D48 /* hiredis.c */; };
-		C65B41281DFAB6F1000E4D48 /* hiredis.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F1F1DFAB02E000E4D48 /* hiredis.h */; };
 		C65B41291DFAB6F1000E4D48 /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F211DFAB02E000E4D48 /* net.c */; };
-		C65B412A1DFAB6F1000E4D48 /* net.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F221DFAB02E000E4D48 /* net.h */; };
-		C65B412B1DFAB6F1000E4D48 /* sds.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F241DFAB02E000E4D48 /* sds.c */; };
-		C65B412C1DFAB6F1000E4D48 /* sds.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F251DFAB02E000E4D48 /* sds.h */; };
-		C65B412D1DFAB6F1000E4D48 /* sdsalloc.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F261DFAB02E000E4D48 /* sdsalloc.h */; };
-		C65B412E1DFAB6F1000E4D48 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F271DFAB02E000E4D48 /* test.c */; };
-		C65B412F1DFAB6F1000E4D48 /* zmalloc.h in Sources */ = {isa = PBXBuildFile; fileRef = C65B3F281DFAB02E000E4D48 /* zmalloc.h */; };
-		C65B41321DFAB70F000E4D48 /* libhiredis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C65B41151DFAB6C5000E4D48 /* libhiredis.a */; };
 		C65B41341DFAB7BD000E4D48 /* redis-check-rdb.c in Sources */ = {isa = PBXBuildFile; fileRef = C65B3E981DFAAF2A000E4D48 /* redis-check-rdb.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C2A278331DFADFEE0056BDE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C620CD9C1DF954E400604C9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C65B41141DFAB6C5000E4D48;
+			remoteInfo = hiredis;
+		};
 		C65B40AD1DFAB112000E4D48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C620CD9C1DF954E400604C9D /* Project object */;
@@ -165,13 +128,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = C65B41001DFAB60E000E4D48;
 			remoteInfo = geohash;
-		};
-		C65B41301DFAB709000E4D48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C620CD9C1DF954E400604C9D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C65B41141DFAB6C5000E4D48;
-			remoteInfo = hiredis;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -631,7 +587,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65B41321DFAB70F000E4D48 /* libhiredis.a in Frameworks */,
+				C2A278351DFADFF60056BDE0 /* libhiredis.a in Frameworks */,
 				C65B41101DFAB636000E4D48 /* libgeohash.a in Frameworks */,
 				C65B40F01DFAB210000E4D48 /* liblua.a in Frameworks */,
 			);
@@ -1344,7 +1300,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65B40EF1DFAB179000E4D48 /* lua.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1369,6 +1324,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C65B3E571DFAAF0F000E4D48 /* Build configuration list for PBXNativeTarget "redis-server" */;
 			buildPhases = (
+				C2A278391DFAE51F0056BDE0 /* ShellScript */,
 				C65B3E4D1DFAAF0F000E4D48 /* Sources */,
 				C65B3E4E1DFAAF0F000E4D48 /* Frameworks */,
 				C65B3E4F1DFAAF0F000E4D48 /* CopyFiles */,
@@ -1376,7 +1332,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C65B41311DFAB709000E4D48 /* PBXTargetDependency */,
+				C2A278341DFADFEE0056BDE0 /* PBXTargetDependency */,
 				C65B410F1DFAB630000E4D48 /* PBXTargetDependency */,
 				C65B40AE1DFAB112000E4D48 /* PBXTargetDependency */,
 			);
@@ -1487,6 +1443,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2A278391DFAE51F0056BDE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../src && ./mkreleasehdr.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C65B3E4D1DFAAF0F000E4D48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1554,67 +1526,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				C65B406F1DFAB0ED000E4D48 /* fpconv.c in Sources */,
-				C65B40701DFAB0ED000E4D48 /* fpconv.h in Sources */,
 				C65B40711DFAB0ED000E4D48 /* lapi.c in Sources */,
-				C65B40721DFAB0ED000E4D48 /* lapi.h in Sources */,
 				C65B40731DFAB0ED000E4D48 /* lauxlib.c in Sources */,
-				C65B40741DFAB0ED000E4D48 /* lauxlib.h in Sources */,
 				C65B40751DFAB0ED000E4D48 /* lbaselib.c in Sources */,
 				C65B40761DFAB0ED000E4D48 /* lcode.c in Sources */,
-				C65B40771DFAB0ED000E4D48 /* lcode.h in Sources */,
 				C65B40781DFAB0ED000E4D48 /* ldblib.c in Sources */,
 				C65B40791DFAB0ED000E4D48 /* ldebug.c in Sources */,
-				C65B407A1DFAB0ED000E4D48 /* ldebug.h in Sources */,
 				C65B407B1DFAB0ED000E4D48 /* ldo.c in Sources */,
-				C65B407C1DFAB0ED000E4D48 /* ldo.h in Sources */,
 				C65B407D1DFAB0ED000E4D48 /* ldump.c in Sources */,
 				C65B407E1DFAB0ED000E4D48 /* lfunc.c in Sources */,
-				C65B407F1DFAB0ED000E4D48 /* lfunc.h in Sources */,
 				C65B40801DFAB0ED000E4D48 /* lgc.c in Sources */,
-				C65B40811DFAB0ED000E4D48 /* lgc.h in Sources */,
 				C65B40821DFAB0ED000E4D48 /* linit.c in Sources */,
 				C65B40831DFAB0ED000E4D48 /* liolib.c in Sources */,
 				C65B40841DFAB0ED000E4D48 /* llex.c in Sources */,
-				C65B40851DFAB0ED000E4D48 /* llex.h in Sources */,
-				C65B40861DFAB0ED000E4D48 /* llimits.h in Sources */,
 				C65B40871DFAB0ED000E4D48 /* lmathlib.c in Sources */,
 				C65B40881DFAB0ED000E4D48 /* lmem.c in Sources */,
-				C65B40891DFAB0ED000E4D48 /* lmem.h in Sources */,
 				C65B408A1DFAB0ED000E4D48 /* loadlib.c in Sources */,
 				C65B408B1DFAB0ED000E4D48 /* lobject.c in Sources */,
-				C65B408C1DFAB0ED000E4D48 /* lobject.h in Sources */,
 				C65B408D1DFAB0ED000E4D48 /* lopcodes.c in Sources */,
-				C65B408E1DFAB0ED000E4D48 /* lopcodes.h in Sources */,
 				C65B408F1DFAB0ED000E4D48 /* loslib.c in Sources */,
 				C65B40901DFAB0ED000E4D48 /* lparser.c in Sources */,
-				C65B40911DFAB0ED000E4D48 /* lparser.h in Sources */,
 				C65B40921DFAB0ED000E4D48 /* lstate.c in Sources */,
-				C65B40931DFAB0ED000E4D48 /* lstate.h in Sources */,
 				C65B40941DFAB0ED000E4D48 /* lstring.c in Sources */,
-				C65B40951DFAB0ED000E4D48 /* lstring.h in Sources */,
 				C65B40961DFAB0ED000E4D48 /* lstrlib.c in Sources */,
 				C65B40971DFAB0ED000E4D48 /* ltable.c in Sources */,
-				C65B40981DFAB0ED000E4D48 /* ltable.h in Sources */,
 				C65B40991DFAB0ED000E4D48 /* ltablib.c in Sources */,
 				C65B409A1DFAB0ED000E4D48 /* ltm.c in Sources */,
-				C65B409B1DFAB0ED000E4D48 /* ltm.h in Sources */,
-				C65B409C1DFAB0ED000E4D48 /* lua.h in Sources */,
 				C65B409D1DFAB0ED000E4D48 /* lua_bit.c in Sources */,
 				C65B409E1DFAB0ED000E4D48 /* lua_cjson.c in Sources */,
 				C65B409F1DFAB0ED000E4D48 /* lua_cmsgpack.c in Sources */,
 				C65B40A01DFAB0ED000E4D48 /* lua_struct.c in Sources */,
-				C65B40A11DFAB0ED000E4D48 /* luaconf.h in Sources */,
-				C65B40A21DFAB0ED000E4D48 /* lualib.h in Sources */,
 				C65B40A31DFAB0ED000E4D48 /* lundump.c in Sources */,
-				C65B40A41DFAB0ED000E4D48 /* lundump.h in Sources */,
 				C65B40A51DFAB0ED000E4D48 /* lvm.c in Sources */,
-				C65B40A61DFAB0ED000E4D48 /* lvm.h in Sources */,
 				C65B40A71DFAB0ED000E4D48 /* lzio.c in Sources */,
-				C65B40A81DFAB0ED000E4D48 /* lzio.h in Sources */,
-				C65B40A91DFAB0ED000E4D48 /* Makefile in Sources */,
 				C65B40AA1DFAB0ED000E4D48 /* print.c in Sources */,
 				C65B40AB1DFAB0ED000E4D48 /* strbuf.c in Sources */,
-				C65B40AC1DFAB0ED000E4D48 /* strbuf.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1623,9 +1569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C65B410A1DFAB622000E4D48 /* geohash.c in Sources */,
-				C65B410B1DFAB622000E4D48 /* geohash.h in Sources */,
 				C65B410C1DFAB622000E4D48 /* geohash_helper.c in Sources */,
-				C65B410D1DFAB622000E4D48 /* geohash_helper.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1633,30 +1577,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65B411E1DFAB6F1000E4D48 /* ae.h in Sources */,
-				C65B411F1DFAB6F1000E4D48 /* libev.h in Sources */,
-				C65B41201DFAB6F1000E4D48 /* libevent.h in Sources */,
-				C65B41211DFAB6F1000E4D48 /* libuv.h in Sources */,
+				C2A278361DFAE2B60056BDE0 /* hiredis.c in Sources */,
 				C65B41221DFAB6F1000E4D48 /* async.c in Sources */,
-				C65B41231DFAB6F1000E4D48 /* async.h in Sources */,
-				C65B41241DFAB6F1000E4D48 /* dict.c in Sources */,
-				C65B41251DFAB6F1000E4D48 /* dict.h in Sources */,
-				C65B41261DFAB6F1000E4D48 /* fmacros.h in Sources */,
-				C65B41271DFAB6F1000E4D48 /* hiredis.c in Sources */,
-				C65B41281DFAB6F1000E4D48 /* hiredis.h in Sources */,
 				C65B41291DFAB6F1000E4D48 /* net.c in Sources */,
-				C65B412A1DFAB6F1000E4D48 /* net.h in Sources */,
-				C65B412B1DFAB6F1000E4D48 /* sds.c in Sources */,
-				C65B412C1DFAB6F1000E4D48 /* sds.h in Sources */,
-				C65B412D1DFAB6F1000E4D48 /* sdsalloc.h in Sources */,
-				C65B412E1DFAB6F1000E4D48 /* test.c in Sources */,
-				C65B412F1DFAB6F1000E4D48 /* zmalloc.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C2A278341DFADFEE0056BDE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C65B41141DFAB6C5000E4D48 /* hiredis */;
+			targetProxy = C2A278331DFADFEE0056BDE0 /* PBXContainerItemProxy */;
+		};
 		C65B40AE1DFAB112000E4D48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C65B40651DFAB072000E4D48 /* lua */;
@@ -1666,11 +1600,6 @@
 			isa = PBXTargetDependency;
 			target = C65B41001DFAB60E000E4D48 /* geohash */;
 			targetProxy = C65B410E1DFAB630000E4D48 /* PBXContainerItemProxy */;
-		};
-		C65B41311DFAB709000E4D48 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C65B41141DFAB6C5000E4D48 /* hiredis */;
-			targetProxy = C65B41301DFAB709000E4D48 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1766,7 +1695,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = CGRWT6YKZK;
-				HEADER_SEARCH_PATHS = "deps/lua/src/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1775,7 +1703,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = CGRWT6YKZK;
-				HEADER_SEARCH_PATHS = "deps/lua/src/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1853,6 +1780,7 @@
 				C65B3E561DFAAF0F000E4D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C65B406C1DFAB072000E4D48 /* Build configuration list for PBXNativeTarget "lua" */ = {
 			isa = XCConfigurationList;
@@ -1861,6 +1789,7 @@
 				C65B406E1DFAB072000E4D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C65B41071DFAB60E000E4D48 /* Build configuration list for PBXNativeTarget "geohash" */ = {
 			isa = XCConfigurationList;
@@ -1869,6 +1798,7 @@
 				C65B41091DFAB60E000E4D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C65B411B1DFAB6C5000E4D48 /* Build configuration list for PBXNativeTarget "hiredis" */ = {
 			isa = XCConfigurationList;
@@ -1877,6 +1807,7 @@
 				C65B411D1DFAB6C5000E4D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
