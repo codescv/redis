@@ -45,7 +45,7 @@
 #include <pthread.h>
 #include <syslog.h>
 #include <netinet/in.h>
-#include <lua.h>
+#include "lua.h"
 #include <signal.h>
 
 typedef long long mstime_t; /* millisecond time type. */

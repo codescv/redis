@@ -40,7 +40,7 @@
 #include <signal.h>
 #include <assert.h>
 
-#include <sds.h> /* Use hiredis sds. */
+#include "sds.h" /* Use hiredis sds. */
 #include "ae.h"
 #include "hiredis.h"
 #include "adlist.h"
